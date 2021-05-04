@@ -37,10 +37,14 @@
       </p>
 
       <!-- Email -->
-      <label for="email" class="input-label">
-        <input type="email" name="email" id="input-email" placeholder="Email Address">
-        <input type="submit" id="input-submit" value=">">
-      </label>
+      <form name="email-form" class="email-form">
+        <label for="email" class="input-label">
+          <input type="email" name="email" id="input-email" placeholder="Email Address" autocomplete="off" required>
+          <p class="input-email__warning">Please provide a valid email</p>
+        </label>
+        <button type="submit" class="btn-submit"><img src="./images/icon-arrow.svg" alt=""></button>
+      </form>
+
     </main>
 
   </div>
