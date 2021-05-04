@@ -19,24 +19,29 @@
   --btn-bg-color: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 .main-container {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 .logo {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   width: 30%;
   margin: 20px auto 20px 30px;
   max-width: 300px;
   /* display: none; */
 }
 .hero-photo {
-  max-width: 100%;
+  /* border: 3px solid green; */
+  background-image: url(../images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
   /* display: none; */
 }
 .main-content {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;

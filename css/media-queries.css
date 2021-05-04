@@ -1,23 +1,38 @@
 @media screen and (min-width: 768px) {
   .main-container {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
     grid-template-rows: 20% 60% 20%;
     place-items: center;
   }
-
+  .logo{
+    margin: 0px auto 0px 60px;
+  }
   .hero-photo{
       grid-column: 2/-1;
       grid-row: 1/-1;
+      background-image: url(../images/hero-desktop.jpg);
+      background-repeat: no-repeat;
+      background-position-x: center;
       height: 100%;
-      object-fit: cover;
-      object-position: left;
+  }
+.main-content{
+  align-items: flex-start;
+  margin-left: 60px;
+  width: auto;
+
+}
+  .main-content__title{
+    text-align: left;
+  }
+  .main-content__description{
+    text-align: left;
   }
 
   /* Attribution */
   .attribution {
     position: absolute;
     bottom: 0;
-    left: 50px;
+    left: 10%;
   }
 }
