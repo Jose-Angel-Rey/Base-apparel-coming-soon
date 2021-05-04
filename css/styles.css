@@ -19,7 +19,7 @@
   --btn-bg-color: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 .main-container {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -35,7 +35,7 @@
   /* display: none; */
 }
 .main-content {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
