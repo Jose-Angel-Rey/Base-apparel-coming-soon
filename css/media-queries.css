@@ -1,3 +1,23 @@
-@media screen and (min-width:768px){
-    
+@media screen and (min-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% 60% 20%;
+    place-items: center;
+  }
+
+  .hero-photo{
+      grid-column: 2/-1;
+      grid-row: 1/-1;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+  }
+
+  /* Attribution */
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
 }
