@@ -5,27 +5,26 @@
     grid-template-rows: 20% 60% 20%;
     place-items: center;
   }
-  .logo{
-    margin: 0px auto 0px 60px;
+  .logo {
+    margin: 0px auto 0px 20%;
   }
-  .hero-photo{
-      grid-column: 2/-1;
-      grid-row: 1/-1;
-      background-image: url(../images/hero-desktop.jpg);
-      background-repeat: no-repeat;
-      background-position-x: center;
-      height: 100%;
+  .hero-photo {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    background-image: url(../images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 100%;
   }
-.main-content{
-  align-items: flex-start;
-  margin-left: 60px;
-  width: auto;
-
-}
-  .main-content__title{
+  .main-content {
+    align-items: flex-start;
+    margin-left: 20%;
+    width: auto;
+  }
+  .main-content__title {
     text-align: left;
   }
-  .main-content__description{
+  .main-content__description {
     text-align: left;
   }
 
@@ -34,5 +33,19 @@
     position: absolute;
     bottom: 0;
     left: 10%;
+  }
+}
+@media screen and (min-width: 1300px) {
+   .main-content__title {
+    font-size: 82px;
+    letter-spacing: 15px;
+    max-width: 500px;
+  }
+  
+  .main-content__description {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 50px auto 75px 0px;
+    
   }
 }
