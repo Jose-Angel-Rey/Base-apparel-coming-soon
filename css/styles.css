@@ -32,9 +32,11 @@
   width: 30%;
   margin: 20px auto 20px 30px;
   max-width: 300px;
+  display: none;
 }
-.hero-image {
-  max-width: 100%;
+.hero-photo {
+  /* max-width: 100%; */
+  display: none;
 }
 .main-content {
   border: 1px solid blue;
@@ -57,10 +59,41 @@
   color: var(--title-span-color);
   font-weight: 700;
 }
-.main-content__description{
-    color: var(--title-color);
-    line-height: 25px;
-    text-align: center;
-    margin: 30px 0px 50px;
-    width: 80%;
+.main-content__description {
+  color: var(--title-color);
+  line-height: 25px;
+  text-align: center;
+  margin: 30px 0px 50px;
+  width: 80%;
+}
+.input-label {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+}
+#input-email {
+  border: 1px solid hsl(0, 80%, 86%);
+  border-radius: 25px;
+  width: 85%;
+  padding: 17px 20px;
+}
+#input-email::placeholder {
+  color: hsl(0, 80%, 86%);
+}
+#input-submit {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  border-radius: 25px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  height: 100%;
+  width: 25%;
+  max-width: 100px;
+  position: absolute;
+  right: 0;
 }
