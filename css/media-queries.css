@@ -32,20 +32,43 @@
   .attribution {
     position: absolute;
     bottom: 0;
-    left: 10%;
+    right: 5%;
+    color: aliceblue;
+  }
+  .attribution a{
+    color: #fff;
   }
 }
 @media screen and (min-width: 1300px) {
-   .main-content__title {
+  .main-content__title {
     font-size: 82px;
     letter-spacing: 15px;
     max-width: 500px;
   }
-  
+
   .main-content__description {
     font-size: 20px;
     line-height: 35px;
     margin: 50px auto 75px 0px;
-    
+  }
+  .input-label {
+    max-width: 480px;
+  }
+  #input-email {
+    /* display: flex;
+    align-items: center; */
+    border-radius: 40px;
+    width: 85%;
+    padding: 25px 30px;
+  }
+  #input-email::placeholder {
+    font-size: 18px;
+  }
+  #input-submit {
+    border-radius: 40px;
+    max-width: 110px;
+  }
+  .attribution{
+    font-size: 18px;
   }
 }
