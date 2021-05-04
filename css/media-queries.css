@@ -3,7 +3,8 @@
     display: grid;
     grid-template-columns: 55% 45%;
     grid-template-rows: 20% 60% 20%;
-    place-items: center;
+    justify-items: center;
+    align-items: center;
   }
   .logo {
     margin: 0px auto 0px 20%;
@@ -39,9 +40,9 @@
     color: #fff;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .main-content {
-    margin-left: 10%;
+    width: 80%;
   }
   .main-content__title {
     font-size: 62px;
@@ -52,6 +53,7 @@
   .main-content__description {
     line-height: 30px;
     width: 85%;
+    font-size: 18px;
     max-width: 500px;
   }
   .input-label {
