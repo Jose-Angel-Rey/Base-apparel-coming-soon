@@ -43,7 +43,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .main-container{
+  .main-container {
     background-size: contain;
   }
   .main-content {
