@@ -69,21 +69,21 @@
   width: 80%;
 }
 .email-form {
-  /* border: 1px solid red; */
+   border: 1px solid red; 
   display: flex;
   align-items: center;
   position: relative;
   width: 80%;
   max-width: 400px;
 }
-.input-label {
-  /* border: 1px solid blue; */
+/*.input-label {
+  border: 1px solid blue;
   width: 100%;
-}
+}*/
 #input-email {
   border: 1px solid #ddd;
   border-radius: 25px;
-  width: 85%;
+  width: 90%;
   padding: 17px 20px;
   transition: all 0.5s;
 }
