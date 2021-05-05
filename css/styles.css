@@ -10,38 +10,26 @@
 
   --input-special-color: hsl(0, 93%, 68%);
 
-  --bg-gradient-color: linear-gradient(
-    135deg,
-    hsl(0, 0%, 100%),
-    hsl(0, 100%, 98%)
-  );
-
   --btn-bg-color: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 .main-container {
-  /* border: 1px solid magenta; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 .logo {
-  /* border: 1px solid magenta; */
   width: 30%;
   margin: 20px auto 20px 30px;
   max-width: 150px;
-  /* display: none; */
 }
 .hero-photo {
-  /* border: 3px solid green; */
   background-image: url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
   width: 100%;
-  /* display: none; */
 }
 .main-content {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,22 +57,19 @@
   width: 80%;
 }
 .email-form {
-   border: 1px solid red; 
   display: flex;
   align-items: center;
   position: relative;
   width: 80%;
   max-width: 400px;
 }
-/*.input-label {
-  border: 1px solid blue;
-  width: 100%;
-}*/
 #input-email {
   border: 1px solid #ddd;
   border-radius: 25px;
   width: 90%;
   padding: 17px 20px;
+  display: flex;
+  align-items: center;
   transition: all 0.5s;
 }
 #input-email:focus {
@@ -97,17 +82,21 @@
 #input-email:focus::placeholder {
   color: hsl(0, 80%, 86%);
 }
-.input-email__warning{
+
+.input-email__warning {
   color: var(--input-special-color);
   font-size: 14px;
   margin-left: 20px;
   margin-top: 10px;
   position: absolute;
-  transition: all .5s;
+  transform: translateY(40px);
+  transition: all 0.5s;
   opacity: 0;
+  -webkit-user-select: none;
+  user-select: none;
 }
-.input-email__warning--visible{
-opacity: 1;
+.input-email__warning--visible {
+  opacity: 1;
 }
 .btn-submit {
   background: var(--btn-bg-color);
@@ -121,11 +110,17 @@ opacity: 1;
   max-width: 100px;
   position: absolute;
   right: 0;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 .btn-submit:hover {
   background: #fad6d6;
-  /* opacity: 0.5; */
+}
+.btn-submit--error-icon::after {
+  content: url(../images/icon-error.svg);
+  position: absolute;
+  left: -35px;
+  width: 25px;
+  height: 25px;
 }
 /* Attribution footer */
 .attribution {
